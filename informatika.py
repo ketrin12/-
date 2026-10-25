@@ -114,10 +114,10 @@ col_menu1, col_menu2 = st.columns(2)
 
 with col_menu1:
     if st.button("ДА ХОЧУ", use_container_width=True):
-        st.switch_page("pages\da_1.py")
+        st.switch_page("da_1")
 
 with col_menu2:
     if st.button("НЕТ НЕ ХОЧУ", use_container_width=True):
-        st.switch_page("pages\net_2.py")
+        st.switch_page("net_2")
 
 st.divider()
