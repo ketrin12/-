@@ -110,8 +110,14 @@ st.write("В 2026 году в Республике Беларусь отмеча
 
 # Добавляем крупные и понятные кнопки для мобильных пользователей прямо по центру
 st.markdown("### 📱 Быстрый переход по разделам:")
+col_menu1, col_menu2 = st.columns(2)
 
-LANG_DICT = {
-    "Русский": {
-        "nav": ["ДА ХОЧУ, НЕТ НЕ ХОЧУ"],
-    }}
+with col_menu1:
+    if st.button("ДА ХОЧУ", use_container_width=True):
+        st.switch_page("pages/1_Цены.py") # Проверь, чтобы имя файла в скобках совпадало с твоим в папке pages
+
+with col_menu2:
+    if st.button("НЕТ НЕ ХОЧУ", use_container_width=True):
+        st.switch_page("pages/2_Галерея.py") # Проверь, чтобы имя файла в скобках совпадало с твоим в папке pages
+
+st.divider()
