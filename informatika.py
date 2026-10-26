@@ -149,7 +149,7 @@ elif st.session_state.page == "info":
 # --- СТРАНИЦА С ОБИДКОЙ (НЕТ) ---
 elif st.session_state.page == "rejection":
     st.markdown("<h1 class='main-title'>😲 Ой...</h1>", unsafe_allow_html=True)
-    st.error("ну ты и негодяй!!!!!")
+    st.error("ну ты и негодяй!!!!! Надеюсь ты подумаешь над своим выбором!")
     
     st.markdown("<br><br>", unsafe_allow_html=True)
     if st.button("⬅️ Исправиться и вернуться", use_container_width=True):
